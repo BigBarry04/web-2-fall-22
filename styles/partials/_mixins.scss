@@ -36,26 +36,33 @@
 }
 
 @mixin left () {
-    
-    position: absolute;
-    left: 85px;
-    top: 150px;
+    width: 300px;
     text-align: center;
     font-size: 18px;
     float: left;
+    position: relative;
+    display: inline;
+    max-height: 10%S ;
+    bottom:auto;
+    min-width:10%;     
+    max-width:40%;
+    padding: 50px;
+
 }
 
 
 
 
 @mixin right () {
-    position: absolute;
-    right: 90px;
-    top: 100px;
-    width: 300px;
-    padding: 50px;
-    float: right;
     
+    width: 400px;
+    padding: 50px;
+   float: right;
+   position: relative;
+             display: inline;
+             bottom:auto;
+         min-width:10%;     
+             max-width:40%
 
     
 }
@@ -65,10 +72,9 @@
      color: #cf8907;
         text-transform: uppercase;
         text-align: center;
-        display: block;
         position: absolute;
-        bottom: 210px;
-        left: 190px;
+        bottom: 110px;
+        left: 150px;
         text-decoration: solid;
         font-weight: bolder;
 
