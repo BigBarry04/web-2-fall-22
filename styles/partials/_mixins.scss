@@ -1,0 +1,78 @@
+@mixin heading() { 
+    font-family: $heading;
+    color: $secondary-color;
+    font-size: 40px;
+    font-style: italic;
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+@mixin subtitle () {
+    text-transform: uppercase;
+    margin: 0px;
+    font-size: 38px;
+    font-family: $title;
+
+}
+
+
+@mixin list-item() {
+    display: block;
+    color: $nav-color;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+@mixin nav-back () {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+@mixin left () {
+    
+    position: absolute;
+    left: 85px;
+    top: 150px;
+    text-align: center;
+    font-size: 18px;
+    float: left;
+}
+
+
+
+
+@mixin right () {
+    position: absolute;
+    right: 90px;
+    top: 100px;
+    width: 300px;
+    padding: 50px;
+    float: right;
+    
+
+    
+}
+
+@mixin bottom () {
+   
+     color: #cf8907;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        position: absolute;
+        bottom: 210px;
+        left: 190px;
+        text-decoration: solid;
+        font-weight: bolder;
+
+}
+
+
+    

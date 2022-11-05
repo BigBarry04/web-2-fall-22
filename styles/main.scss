@@ -1,0 +1,86 @@
+@import "./vendor/normalize";
+@import "./partials/colors";
+@import "./partials/typography";
+@import "./partials/mixins";
+
+.head {
+  @include heading ();
+}
+
+
+.subtitle {
+  @include subtitle ();
+}
+
+
+nav {
+  ul {
+  @include nav-back ();
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+   @include list-item ();
+  }
+  div {
+   color: $nav-color;
+   padding: 15px;
+  }
+  
+  
+  li a:hover {
+    background-color:$darker-background;
+  }
+}
+
+.left {
+@include left ();
+text-align: center;
+}
+
+
+
+.right {
+  @include right ();
+
+}
+
+
+
+
+section {
+  article {
+    p{
+      font-family: $primary-font;
+      font-size: 24px;
+      width: 300px;
+      text-align: center;
+
+    }
+    
+  }
+}
+
+
+.bottom {
+  @include bottom ();
+}
+
+
+
+// media queries 
+
+@media (min-width: 768px) {
+    .container {
+      background-color: yellow;
+    }
+  }
+  // Big screens
+  @media (min-width: 1024px) {
+    .container {
+      background-color: navy;
+    }
+  }
